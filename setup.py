@@ -12,7 +12,7 @@ def read(fname):
 
 setup(
     name="brutebuster_signals",
-    version=contact_form.__version__,
+    version=brutebuster_signals.__version__,
     description=read('DESCRIPTION'),
     long_description=read('README.rst'),
     keywords='brutebuster signals email',
