@@ -1,0 +1,7 @@
+{% load url from future %}
+Review entry at http://{{ site }}{% url "admin:BruteBuster_failedattempt_change" object.id %}
+
+Username: {{ object.username }}
+IP: {{ object.IP }}
+Failures: {{ object.failures }}
+Timestamp: {{ object.timestamp }}
