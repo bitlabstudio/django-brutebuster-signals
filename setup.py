@@ -11,7 +11,7 @@ def read(fname):
 
 
 setup(
-    name="brutebuster_signals",
+    name="django-brutebuster-signals",
     version=brutebuster_signals.__version__,
     description=read('DESCRIPTION'),
     long_description=read('README.rst'),
@@ -21,5 +21,7 @@ setup(
     author_email='tobias.lorenz@bitmazk.com',
     url="https://github.com/bitmazk/django-brutebuster-signals",
     include_package_data=True,
-    test_suite='',
+    install_requires=[
+        'django-brutebuster',
+    ],
 )
