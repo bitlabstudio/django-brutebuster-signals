@@ -16,15 +16,16 @@ Get und implement BruteBuster:
 * `django-brutebuster <http://code.google.com/p/django-brutebuster/>`_
 
 Make sure it is working perfect.
+
 * Install this package::
 
-    pip install -e git://github.com/bitmazk/django-brutebuster-signals#egg=brutebuster-signals
+    pip install -e git://github.com/bitmazk/django-brutebuster-signals#egg=brutebuster_signals
 
-* Add ``brutebuster-signals`` to your ``INSTALLED_APPS``::
+* Add ``brutebuster_signals`` to your ``INSTALLED_APPS``::
 
     INSTALLED_APPS = (
         [...]
-        'brutebuster-signals',
+        'brutebuster_signals',
     }
 
 * Add ``MANAGERS`` to your ``settings.py``::

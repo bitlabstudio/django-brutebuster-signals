@@ -1,6 +1,6 @@
 import os
 from setuptools import setup, find_packages
-import brutebustersignals
+import brutebuster_signals
 
 
 def read(fname):
@@ -11,7 +11,7 @@ def read(fname):
 
 
 setup(
-    name="brutebuster-signals",
+    name="brutebuster_signals",
     version=contact_form.__version__,
     description=read('DESCRIPTION'),
     long_description=read('README.rst'),
