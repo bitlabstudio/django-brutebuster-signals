@@ -14,12 +14,12 @@ def send_notification(sender, instance, signal, *args, **kwargs):
         'site': Site.objects.get_current()
     }
     subject = render_to_string(
-            'brutebustersignals/notification_subject.txt',
+            'brutebuster_signals/notification_subject.txt',
             ctx_dict)
     # Email subject *must not* contain newlines
     subject = ''.join(subject.splitlines())
 
-    message = render_to_string('brutebustersignals/notification.txt', ctx_dict)
+    message = render_to_string('brutebuster_signals/notification.txt', ctx_dict)
     to = [item[1] for item in settings.MANAGERS]
     send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, to)
 
