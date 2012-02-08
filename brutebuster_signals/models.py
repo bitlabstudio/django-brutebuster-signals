@@ -32,9 +32,10 @@ def failed_attempt_pre_save_handler(sender, instance, signal, *args, **kwargs):
 
 
 def failed_attempt_post_save_handler(sender, instance, signal, *args, **kwargs):
-    if 'created' in kwargs:
+    if kwargs['created'] == True:
         send_notification(instance)
 
 pre_save.connect(failed_attempt_pre_save_handler, sender=FailedAttempt)
 post_save.connect(failed_attempt_post_save_handler, sender=FailedAttempt)
+
 
